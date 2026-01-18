@@ -11,12 +11,12 @@ import "./App.css";
 import { Toaster } from "./components/refine-ui/notification/toaster";
 import { useNotificationProvider } from "./components/refine-ui/notification/use-notification-provider";
 import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
-import { dataProvider } from "./providers/data";
+import { dataProvider } from "./provider/data";
 import Dashboard from "@/pages/dashboard.tsx";
 import {BookOpen, Home} from "lucide-react";
 import {Layout} from "@/components/refine-ui/layout/layout.tsx";
 import SubjectsList from "@/pages/subjects/list.tsx";
-import SubjectCreate from "@/pages/subjects/create.tsx";
+import SubjectsCreate from "@/pages/subjects/create.tsx";
 
 function App() {
   return (
@@ -56,7 +56,7 @@ function App() {
                       <Route path="/" element={<Dashboard />} />
                       <Route path="/subjects">
                           <Route index element={<SubjectsList />} />
-                          <Route path="create" element={<SubjectCreate />}/>
+                          <Route path="create" element={<SubjectsCreate />}/>
                       </Route>
                   </Route>
               </Routes>

@@ -1,6 +1,6 @@
-const SubjectCreate = () => {
+const SubjectsCreate = () => {
     return (
         <div>Create</div>
     )
 }
-export default SubjectCreate
+export default SubjectsCreate
